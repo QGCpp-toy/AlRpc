@@ -1,0 +1,13 @@
+package com.tencent.hello;
+
+message HelloReq {
+	optional string data=1;
+}
+
+message HelloRsp {
+	optional string ret_code=1;
+}
+
+service k12_hello {
+	rpc Hello(HelloReq) returns(HelloRsp);
+}
